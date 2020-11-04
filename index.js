@@ -52,9 +52,6 @@ function copy(originalFlavors){
 }    
 
 
-
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
     1. an array
@@ -90,7 +87,7 @@ addFlavor();
 
 function addFlavor(originalFlavors){
    let addFlavor = originalFlavors.push("Rainbow Sherbert");
-   console.log(addFlavor)
+   console.log(addFlavor);
 }
 
 
@@ -104,9 +101,11 @@ Use the removeLastFlavor function below to do the following:
 
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
+removeLastFlavor();
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(addFlavor){
+   let removeLastFlavor = addFlavor.pop()
+   console.log(removeLastFlavor)
 }
 
 
