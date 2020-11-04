@@ -44,9 +44,11 @@ Use the copy function below to do the following:
     1. An array as an argument
     2. Return a copy of the received array  
 */
+copy();
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(originalFlavors){
+    let copyFlavors = [...originalFlavors];
+    console.log(copyFlavors);
 }    
 
 
@@ -62,10 +64,15 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
+is31Flavors();
 
-
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(originalFlavors){
+    if (originalFlavors.length === 31){
+        console.log("TRUE");
+    }
+    else{
+        console.log("FALSE");
+    }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -79,10 +86,11 @@ Use the addFlavor function below to do the following:
 
     For example: addFlavor("Rainbow Sherbert", originalFlavors) should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
+addFlavor();
 
-
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(originalFlavors){
+   let addFlavor = originalFlavors.push("Rainbow Sherbert");
+   console.log(addFlavor)
 }
 
 
